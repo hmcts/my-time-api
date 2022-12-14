@@ -197,16 +197,21 @@ dependencies {
   implementation group: 'com.github.hmcts.java-logging', name: 'logging', version: '6.0.1'
 
   // temporary work around for dependency check
+  implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.14.0-rc1'
   implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.0-rc1'
-  implementation group: 'com.fasterxml.jackson', name: 'jackson-bom', version: '2.14.0-rc1', ext: 'pom'
+  implementation group: 'com.fasterxml.jackson', name: 'jackson-bom', version: '2.13.3', ext: 'pom'
+  implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.13.3'
 
   implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: log4JVersion
   implementation group: 'org.apache.logging.log4j', name: 'log4j-to-slf4j', version: log4JVersion
 
   implementation group: 'io.rest-assured', name: 'rest-assured'
+  implementation group: 'org.projectlombok', name: 'lombok'
+  annotationProcessor 'org.projectlombok:lombok'
 
   implementation group: 'org.postgresql', name: 'postgresql'
   implementation group: 'org.flywaydb', name: 'flyway-core'
+  implementation 'org.projectlombok:lombok:1.18.22'
 
   testImplementation(platform('org.junit:junit-bom:5.9.1'))
   testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
@@ -269,7 +274,7 @@ rootProject.tasks.named("processSmokeTestResources") {
 }
 
 wrapper {
-    distributionType = Wrapper.DistributionType.ALL
+  distributionType = Wrapper.DistributionType.ALL
 }
 
 flyway {
