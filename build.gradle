@@ -215,7 +215,7 @@ dependencies {
     exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
   }
 
-  integrationTestImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.17.2'
+  integrationTestImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.17.6'
   integrationTestImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.17.2'
   functionalTestImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.17.2'
   functionalTestImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.17.2'
