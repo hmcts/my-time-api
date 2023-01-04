@@ -4,7 +4,8 @@
 
 ## Notes
 
-Since Spring Boot 2.1 bean overriding is disabled. If you want to enable it you will need to set `spring.main.allow-bean-definition-overriding` to `true`.
+Since Spring Boot 2.1 bean overriding is disabled. If you want to enable it you will need to
+set `spring.main.allow-bean-definition-overriding` to `true`.
 
 JUnit 5 is now enabled by default in the project. Please refrain from using JUnit4 and use the next generation
 
@@ -71,7 +72,9 @@ For more information:
 ./bin/run-in-docker.sh -h
 ```
 
-Script includes bare minimum environment variables necessary to start api instance. Whenever any variable is changed or any other script regarding docker image/container build, the suggested way to ensure all is cleaned up properly is by this command:
+Script includes bare minimum environment variables necessary to start api instance. Whenever any variable is changed or
+any other script regarding docker image/container build, the suggested way to ensure all is cleaned up properly is by
+this command:
 
 ```bash
 docker-compose rm
@@ -91,11 +94,12 @@ There is no need to remove postgres and java or similar core images.
 
 Hystrix offers much more than Circuit Breaker pattern implementation or command monitoring.
 Here are some other functionalities it provides:
- * [Separate, per-dependency thread pools](https://github.com/Netflix/Hystrix/wiki/How-it-Works#isolation)
- * [Semaphores](https://github.com/Netflix/Hystrix/wiki/How-it-Works#semaphores), which you can use to limit
- the number of concurrent calls to any given dependency
- * [Request caching](https://github.com/Netflix/Hystrix/wiki/How-it-Works#request-caching), allowing
- different code paths to execute Hystrix Commands without worrying about duplicating work
+
+* [Separate, per-dependency thread pools](https://github.com/Netflix/Hystrix/wiki/How-it-Works#isolation)
+* [Semaphores](https://github.com/Netflix/Hystrix/wiki/How-it-Works#semaphores), which you can use to limit
+  the number of concurrent calls to any given dependency
+* [Request caching](https://github.com/Netflix/Hystrix/wiki/How-it-Works#request-caching), allowing
+  different code paths to execute Hystrix Commands without worrying about duplicating work
 
 ## License
 
