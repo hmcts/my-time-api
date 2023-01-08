@@ -67,6 +67,14 @@ public class FunctionalTestBase {
             .thenReturn();
     }
 
+    protected Response doDeleteRequest(final String path) {
+        return given()
+            .relaxedHTTPSValidation()
+            .when()
+            .delete(path)
+            .thenReturn();
+    }
+
     protected Response doDeleteRequest(final String path, final String body) {
         return doDeleteRequest(path, null, body);
     }
