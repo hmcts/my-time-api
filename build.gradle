@@ -222,10 +222,10 @@ dependencies {
     exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
   }
 
-  integrationTestImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.18.0'
+  integrationTestImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.18.3'
   integrationTestImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.18.0'
   functionalTestImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.18.0'
-  functionalTestImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.18.0'
+  functionalTestImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.18.3'
 }
 
 mainClassName = 'uk.gov.hmcts.dts.mytime.Application'
