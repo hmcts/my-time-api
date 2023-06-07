@@ -223,8 +223,8 @@ dependencies {
   }
 
   integrationTestImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.18.0'
-  integrationTestImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.18.0'
-  functionalTestImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.18.0'
+  integrationTestImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.18.3'
+  functionalTestImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.18.3'
   functionalTestImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.18.0'
 }
 
