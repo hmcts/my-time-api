@@ -199,7 +199,7 @@ dependencies {
   implementation group: 'com.github.hmcts.java-logging', name: 'logging', version: '6.0.1'
 
   // temporary work around for dependency check
-  implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.2'
+  implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.2'
   implementation group: 'com.fasterxml.jackson', name: 'jackson-bom', version: '2.14.2', ext: 'pom'
   implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.14.2'
   implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.14.2'
